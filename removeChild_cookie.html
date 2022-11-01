@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      // 删除列表元素
+      function delNode() {
+        var ulVa = document.getElementById("ulist")
+        ulVa.removeChild(ulVa.childNodes[0])
+      }
+      // 打印列表值
+      function  da(){
+        var c = document.getElementById("ulist").innerText
+        alert(c)
+      }
+      // 创建cookie
+      function creaCookie() {
+        document.cookie="username=limao;expires=Thu,Tue Nov 01 2022 12:49:20 GMT"
+      }
+      删除cookie的Value
+      function delCookie() {
+        document.cookie="username=;expires=Thu,Tue Nov 01 2022 09:10:20 GMT"
+      }
+      // SetCookie
+      function setCookie(cname,cvalue,exdays)
+      {
+        var d = new Date();
+        d.setTime(d.getTime()+(exdays*24*60*60*1000));
+        var expires = "expires="+d.toGMTString();
+        document.cookie = cname + "=" + cvalue + "; " + expires;
+      }
+      
+    </script>
+  </head>
+  <body>
+    <ul id="ulist">
+      <li>tea</li>
+      <li>TT</li>
+      <li>rr</li>
+    </ul>
+    <button onclick="delNode()">删除</button>
+    <button onclick="da()">打印</button>
+    <button onclick="creaCookie()">创建cookie</button>
+    <button onclick="delCookie()">删除cookie</button>
+    <button onclick="setCookie('ss','dd',2)">Setcookie</button>
+    
+    
+  </body>
+</html>
