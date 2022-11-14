@@ -1,0 +1,32 @@
+.box {
+    width: 1280px;
+    height: 620px;
+    background-color: lightgreen;
+    margin: 0 auto;
+}
+
+.left {
+    float: left;
+    width: 240px;
+    height: 620px;
+    background-color: lightcoral;
+}
+
+.right {
+    float: left;
+    width: 1040px;
+    height: 620px;
+    background-color: lightblue;
+}
+
+.right>div {
+    float: left;
+    width: 240px;
+    height: 300px;
+    background-color: pink;
+    margin-left: 20px;
+    
+}
+.rightBox {
+	margin-bottom: 20px;
+}
