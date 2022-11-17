@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>商城首页 </title>
+		<link href="css/home.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="js/jquery.min.js" charset="utf-8"></script>
+		<script type="text/javascript" src="js/home.js" charset="utf-8"></script>
+
+		<style type="text/css">
+			#shortcut-2013 #jd-vip {
+				padding-left: 40px;
+				position: relative;
+			}
+			
+			#shortcut-2013 #jd-vip img {
+				position: absolute;
+				top: 10px;
+				left: 10px;
+				_top: 8px;
+			}
+			
+			#shortcut-2013 #jd-vip a {
+				*position: relative;
+				*top: -2px;
+				_top: 0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="shortcut-2013">
+			<div class="w">
+				<ul class="fr lh">
+					<li class="fore1" id="loginbar"><span id="loginuser">游客您好！欢迎来到咖啡网上商城 
+       </span>
+						<a href="" onclick="login()">[登录]</a>&nbsp;
+						<a href="" onclick="reg()">[免费注册]</a>
+					</li>
+					<li class="fore2 ld"> <s></s>
+						<a href="我的订单.html">我的订单</a>
+					</li>
+					<li class="fore3 ld"> <s></s>
+						<a href="购物车.html" target="_blank">购物车</a>
+					</li>
+					<li class="fore4 ld menu" id="biz-service" data-widget="dropdown"> <s></s> <span class="outline"></span> <span class="blank"></span> 帮助中心 <b></b>
+						<div class="dd">
+							<div>
+								<a href="#" target="_blank" rel="nofollow">售后服务</a>
+							</div>
+							<div>
+								<a href="#" target="_blank" rel="nofollow">在线客服</a>
+							</div>
+							<div>
+								<a href="#" target="_blank" rel="nofollow">投诉中心</a>
+							</div>
+							<div>
+								<a href="#" target="_blank">客服邮箱</a>
+							</div>
+							<div>
+								<a href="#" target="_blank">客服邮箱</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<span class="clr"></span> </div>
+		</div>
+		<!-- end div w-->
+		<div id="o-header-2013">
+			<!--广告栏1-->
+			<div class="banner" style="padding-left:70px;width:100%">
+				<ul id="banner_img_2">
+					<li style="opacity: 0.39; display: none;">
+						<a target="_blank" rel="nofollow" href="#"><img src="img/home/banner1.jpg"></a>
+					</li>
+					<li style="display: none;">
+						<a target="_blank" rel="nofollow" href="/">
+							<img src="img/home/banner2.jpg">
+						</a>
+					</li>
+					<li style="display: none;">
+						<a target="_blank" rel="nofollow" href="">
+							<img src="img/home/banner3.jpg">
+						</a>
+					</li>
+					<li style="display: list-item;">
+						<a target="_blank" rel="nofollow" href="">
+							<img src="img/home/banner4.jpg">
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--end 广告栏1-->
+			<div class="w" id="header-2013">
+				<div id="logo-2013" class="ld" title="咖啡商城-白咖啡,咖啡豆,咖啡机">
+					<a href="#" hidefocus="true"><img alt="咖啡商城-白咖啡,咖啡豆,咖啡机" src="img/site_logo.gif"></a>
+				</div>
+				<div id="search-2013">
+					<div class="i-search ld">
+						<div class="form">
+							<form method="GET" action="">
+								<input type="text" class="text" name="keyword" autocomplete="off">
+								<input type="submit" class="button" value="搜索" hidefocus="true">
+								<input type="hidden" name="act" value="index">
+								<input type="hidden" name="app" value="search">
+							</form>
+						</div>
+					</div>
+					<div id="hotwords"><strong>热门搜索：</strong>
+						<a href="">白咖啡</a>
+						<a href="">咖啡豆</a>
+						<a href="">咖啡机</a>
+						<a href="">咖啡杯</a>
+						<a href="">咖啡厅</a>
+					</div>
+				</div>
+				<div id="mycoffee-2013">
+					<dl>
+						<dt class="ld"><s></s><a href="我的订单.html">我的订单</a></dt>
+					</dl>
+				</div>
+
+				<div id="mycart">
+					<dl>
+						<dt class="ld"><a href="购物车.html" class="buy">购物车 <strong id="cart_goods_kinds">4</strong> 种商品</a> <b></b> </dt>
+					</dl>
+				</div>
+
+			</div>
+		</div>
+		<div class="w">
+			<div id="nav-2013">
+				<div id="categorys-2013">
+					<div class="mt ld">
+						<h2><a href="">全部商品分类<b></b></a></h2>
+					</div>
+				</div>
+				<ul id="navitems-2013">
+					<li class="curr">
+						<a href="商城首页.html">首页</a>
+					</li>
+					<li class="">
+						<a href="#">商品分类</a>
+					</li>
+					<li class="">
+						<a href="商品详情.html" target="_blank">商品详情</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+		<div id="main">
+
+			<div class="left" area="category" widget_type="area">
+				<div id="_widget_118" name="gcategory_list" widget_type="widget" class="widget">
+					<div class="module_common">
+						<div class="assort_wrap">
+							<dl>
+								<dt><a href="">白咖啡</a></dt>
+								<dd>
+									<a href="">大马白咖啡</a>
+									|
+									<a href="">白咖啡</a>
+								</dd>
+							</dl>
+							<dl>
+								<dt><a href="">咖啡</a></dt>
+								<dd>
+									<a href="">咖啡豆</a>
+									|
+									<a href="">咖啡生豆</a>
+									|
+									<a href="">有机咖啡</a>
+									|
+									<a href="">咖啡胶囊</a>
+								</dd>
+							</dl>
+							<dl>
+								<dt><a href="">咖啡器具</a></dt>
+								<dd>
+									<a href="">奶泡壶</a>
+									|
+									<a href="">压粉器</a>
+									|
+									<a href="">磕粉盒</a>
+									|
+									<a href="">滤紙/滤器/滤布/滤杯</a>
+									|
+									<a href="">光波炉</a>
+									|
+									<a href="">其它</a>
+								</dd>
+							</dl>
+							<dl>
+								<dt><a href="">咖啡原料</a></dt>
+								<dd>
+									<a href="">咖啡粉</a>
+									|
+									<a href="">速溶咖啡</a>
+									|
+									<a href="">纯咖啡粉</a>
+								</dd>
+							</dl>
+							<dl>
+								<dt><a href="">咖啡辅料</a></dt>
+							</dl>
+							<dl>
+								<dt><a href="">咖啡壶</a></dt>
+								<dd>
+									<a href="">虹吸壶</a>
+									|
+									<a href="">摩卡壶</a>
+									|
+									<a href="">法式压壶</a>
+									|
+									<a href="">手冲咖啡壶</a>
+									|
+									<a href="">比利时咖啡壶</a>
+									|
+									<a href="">咖啡壶</a>
+									|
+									<a href="">冰滴壶</a>
+									|
+									<a href="">土耳其壶咖啡壶</a>
+									|
+									<a href="">越南滴漏壶</a>
+									|
+									<a href="">其它</a>
+								</dd>
+							</dl>
+							<dl>
+								<dt><a href="">咖啡研磨机</a></dt>
+								<dd>
+									<a href="">电动磨豆机</a>
+									|
+									<a href="">手动磨豆机</a>
+								</dd>
+							</dl>
+							<dl>
+								<dt><a href="">烘焙机</a></dt>
+							</dl>
+							<dl>
+								<dt><a href="">咖啡杯 / 杯类</a></dt>
+							</dl>
+							<dl>
+								<dt><a href="">咖啡机零件</a></dt>
+								<dd>
+									<a href="">咖啡机清洁粉</a>
+								</dd>
+							</dl>
+							<dl>
+								<dt><a href="">咖啡厅相关设备</a></dt>
+							</dl>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!----middle---->
+			<div class="middle" area="middle" widget_type="area">
+				<!--广告栏2-->
+				<div id="_widget_100"  class="widget">
+					<div>
+						<a href="" target="_blank"><img src="img/home/201402190025061730.jpg" style=""></a>
+					</div>
+				</div>
+				<!--end 广告2-->
+
+				<!--queue -->
+				<div class="queue">
+					<div class="que-i  ">
+
+						<div class="que-m">
+							<a href="商品详情.html?productId=g78" target="_blank">
+								<img src="img/home/taobao/1.jpg_.webp" align="absmiddle">
+
+							</a>
+							<p>【新加坡OWL 猫头鹰三合一速溶咖啡粉45条900g 新藏外包邮</p>
+						</div>
+						<div class="que-u"><span class="que-p"> ¥ <span>32.99</span></span>
+						</div>
+						<span class="que-s que-s2">已售出<em>366699</em>件</span>
+					</div>
+
+					<div class="que-i   ">
+						<div class="que-m">
+							<a href="商品详情.html?productId=g79" target="_blank">
+								<img src="img/home/taobao/2.jpg_.webp" align="absmiddle"></a>
+							<p>【马来西亚原装进口】泽合怡保白咖啡王香浓king三合一速溶白咖啡600g</p>
+
+						</div>
+						<div class="que-u"><span class="que-p">¥<span>63.00</span></span>
+						</div><span class="que-s que-s2">已售出<em>24212</em>件</span></div>
+
+					<div class="que-i   ">
+						<div class="que-m">
+							<a href="商品详情.html?productId=g80" target="_blank">
+								<img src="img/home/taobao/3.jpg_.webp" align="absmiddle"></a>
+							<p>【马来西亚进口 】香浓可可粉 冲饮可可粉 热巧克力粉 可烘焙</p>
+
+						</div>
+						<div class="que-u"> <span class="que-p"> ¥<span>29.99</span></span>
+						</div>
+						<span class="que-s que-s2">已售出<em>18619</em>件</span>
+					</div>
+					<div class="que-i">
+						<div class="que-m">
+							<a href="商品详情.html?productId=g81" target="_blank">
+								<img src="img/home/taobao/4.jpg_.webp" align="absmiddle"></a>
+							<p>新加坡 爷爷金装原味咖啡1000克50杯装3合1速溶咖啡包邮</p>
+
+						</div>
+						<div class="que-u">
+							<span class="que-p">
+        ¥
+        <span>9.99</span>
+							</span>
+
+						</div>
+						<span class="que-s que-s2">
+      已售出
+      <em>14321</em>
+      件
+    </span>
+					</div>
+					<div class="que-i  que-e ">
+						<div class="que-m">
+							<a href="#">
+								<img src="img/home/taobao/5.jpg_.webp" align="absmiddle"></a>
+							<p>【超值特价包邮】新加坡进口休闲OWL猫头鹰3合1特浓速溶咖啡800g</p>
+
+						</div>
+						<div class="que-u">
+							<span class="que-p">
+        ¥
+        <span>42.59</span>
+							</span>
+
+						</div>
+						<span class="que-s que-s2">
+      已售出
+      <em>4656</em>
+      件
+    </span>
+					</div>
+					<div class="que-i">
+						<div class="que-m">
+							<a href="#">
+								<img src="img/home/taobao/6.jpg_.webp" align="absmiddle"></a>
+							<p>进口特价2盒全国包邮马来西亚旧街场3合1经典原味速溶白咖啡640g</p>
+
+						</div>
+						<div class="que-u">
+							<span class="que-p">
+        ¥
+        <span>41.99</span>
+							</span>
+
+						</div>
+						<span class="que-s que-s2">
+      已售出
+      <em>4598</em>
+      件
+    </span>
+					</div>
+					<div class="que-i">
+						<div class="que-m">
+							<a href="#"><img src="img/home/taobao/7.jpg_.webp" align="absmiddle"></a>
+							<p>特价全国包邮 泰国特产进口零食果干榴的华金枕头榴莲干100g*2袋</p>
+						</div>
+						<div class="que-u">
+							<span class="que-p"> ¥  <span>76.00</span> </span>
+						</div>
+						<span class="que-s que-s2"> 已售出<em>4555</em>件</span>
+					</div>
+
+					<div class="que-i">
+						<div class="que-m">
+							<a href="#">
+								<img src="img/home/taobao/8.jpg_.webp" align="absmiddle"></a>
+							<p>特价1箱全国包邮 比利时原装进口和情焦糖零食饼干2500g/咖啡伴侣</p>
+
+						</div>
+						<div class="que-u">
+							<span class="que-p">
+        ¥
+        <span>150.99</span>
+							</span>
+
+						</div>
+						<span class="que-s que-s2">
+      已售出
+      <em>4210</em>
+      件
+    </span>
+					</div>
+					<div class="que-i">
+						<div class="que-m">
+							<a href="#">
+								<img src="img/home/taobao/9.jpg_.webp" align="absmiddle"></a>
+							<p>感恩特价全国包邮 KING马来西亚泽合怡保3合1香浓白咖啡王600g</p>
+
+						</div>
+						<div class="que-u">
+							<span class="que-p">
+        ¥
+        <span>34.99</span>
+							</span>
+
+						</div>
+						<span class="que-s que-s2">
+      已售出
+      <em>3785</em>
+      件
+    </span>
+					</div>
+					<div class="que-i  que-e">
+						<div class="que-m">
+							<a href="#">
+								<img src="img/home/taobao/10.jpg_.webp" align="absmiddle"></a>
+							<p>【大促益买家1袋包邮】马来西亚益昌老街3合1速溶(拉)白咖啡600g</p>
+
+						</div>
+						<div class="que-u">
+							<span class="que-p">
+        ¥
+        <span>32.99</span>
+							</span>
+
+						</div>
+						<span class="que-s que-s2">
+      已售出
+      <em>3773</em>
+      件
+    </span>
+					</div>
+					<div class="que-i">
+						<div class="que-m">
+							<a href="#">
+								<img src="img/home/taobao/11.jpg_.webp" align="absmiddle"></a>
+							<p>特价包邮 新加坡进口休闲饮品OWL猫头鹰3合1低脂速溶咖啡900g</p>
+
+						</div>
+						<div class="que-u">
+							<span class="que-p">
+        ¥
+        <span>42.59</span>
+							</span>
+
+						</div>
+						<span class="que-s que-s2">
+      已售出
+      <em>1714</em>
+      件
+    </span>
+					</div>
+					<div class="que-i">
+						<div class="que-m">
+							<a href="#">
+								<img src="img/home/taobao/12.jpg_.webp" align="absmiddle"></a>
+							<p>特价 全国包邮 比利时原装进口零食Lotus和情焦糖饼干礼盒312g</p>
+
+						</div>
+						<div class="que-u">
+							<span class="que-p">
+        ¥
+        <span>43.99</span>
+							</span>
+
+						</div>
+						<span class="que-s que-s2">
+      已售出
+      <em>1647</em>
+      件
+    </span>
+					</div>
+					<div class="que-i">
+						<div class="que-m">
+							<a href="#">
+								<img src="img/home/taobao/13.jpg_.webp" align="absmiddle"></a>
+							<p>维记 奶油球奶球奶精速溶咖啡伴侣咖啡豆粉专用奶球400ml/袋</p>
+
+						</div>
+						<div class="que-u">
+							<span class="que-p">
+        ¥
+        <span>18.99</span>
+							</span>
+
+						</div>
+						<span class="que-s que-s2">
+      已售出
+      <em>1448</em>
+      件
+    </span>
+					</div>
+					<div class="que-i">
+						<div class="que-m">
+							<a href="#">
+								<img src="img/home/taobao/14.jpg_.webp" align="absmiddle"></a>
+							<p>【特价3包全国包邮】休闲零食品三庆营养燕麦巧克力喜糖麦片1434g</p>
+
+						</div>
+						<div class="que-u">
+							<span class="que-p">
+        ¥
+        <span>38.99</span>
+							</span>
+
+						</div>
+						<span class="que-s que-s2">
+      已售出
+      <em>1427</em>
+      件
+    </span>
+					</div>
+					<div class="que-i  que-e">
+						<div class="que-m">
+							<a href="#">
+								<img src="img/home/taobao/15.jpg_.webp" align="absmiddle"></a>
+							<p>特价全国包邮 新加坡进口猫头鹰爷爷/yeye3合1速溶咖啡1000g</p>
+
+						</div>
+						<div class="que-u">
+							<span class="que-p">
+        ¥
+        <span>39.99</span>
+							</span>
+
+						</div>
+						<span class="que-s que-s2">
+      已售出
+      <em>1356</em>
+      件
+    </span>
+					</div>
+					<div class="que-i">
+						<div class="que-m">
+							<a href="#">
+								<img src="img/home/taobao/16.jpg_.webp" align="absmiddle"></a>
+							<p>特价全国包邮 越南进口中原g7摩卡味卡布奇诺速溶咖啡216g*3盒</p>
+
+						</div>
+						<div class="que-u">
+							<span class="que-p">
+        ¥
+        <span>56.00</span>
+							</span>
+
+						</div>
+						<span class="que-s que-s2">
+      已售出
+      <em>1160</em>
+      件
+    </span>
+					</div>
+					<div class="que-i">
+						<div class="que-m">
+							<a href="#">
+								<img src="img/home/taobao/17.jpg_.webp" align="absmiddle"></a>
+							<p>特价全国包邮 比利时和情焦糖饼干937.5g/150片独立包装/咖啡伴侣</p>
+
+						</div>
+						<div class="que-u">
+							<span class="que-p">
+        ¥
+        <span>80.00</span>
+							</span>
+						</div>
+						<span class="que-s que-s2">
+      已售出
+      <em>1122</em>
+      件
+    </span>
+					</div>
+					<div class="que-i">
+						<div class="que-m">
+							<a href=""><img src="img/home/taobao/18.jpg_.webp" align="absmiddle"></a>
+							<p>【官方授权】特价全国包邮 越南中原g7纯咖啡速溶迷你装30g*3盒</p>
+
+						</div>
+						<div class="que-u">
+							<span class="que-p"> ¥ <span>36.99</span></span>
+						</div>
+						<span class="que-s que-s2">已售出<em>527</em>件</span>
+					</div>
+					<div class="que-i">
+						<div class="que-m">
+							<a href="">
+								<img src="img/home/taobao/19.jpg_.webp" align="absmiddle"></a>
+							<p>【官方授权店】购满包邮越南中原g7咖啡速溶品尝装组合86g 共6条</p>
+
+						</div>
+						<div class="que-u">
+							<span class="que-p">
+        ¥  <span>9.99</span>
+							</span>
+							<span class="que-s que-s2">
+      已售出
+      <em>376</em>
+      件
+    </span>
+						</div>
+					</div>
+				</div>
+				<!--end queue-->
+			</div>
+			<!--end middle-->
+			<div class="right" area="right" widget_type="area">
+
+				<div id="_widget_493" name="notice" widget_type="widget" class="widget">
+					<div id="coffeenews" class="m m1">
+						<div class="mt">
+							<h2>咖啡快报</h2>
+							<div class="extra">
+								<a href="" target="_blank">更多快报&nbsp;&gt;</a>
+							</div>
+						</div>
+						<div class="mc">
+							<ul>
+								<li class="odd">
+									<a href="#" title="咖啡师人才服务">咖啡师人才服务</a>
+								</li>
+								<li>
+									<a href="#" title="咖啡什么时候喝最提神">咖啡什么时候喝最提神</a>
+								</li>
+								<li class="odd">
+									<a href="#" title="加盟热线">加盟热线</a>
+								</li>
+								<li>
+									<a href="#" title="欢迎进驻咖啡驿吧">欢迎进驻咖啡驿吧</a>
+								</li>
+								<li class="odd">
+									<a href="#" title="免费开店">免费开店</a>
+								</li>
+								<li>
+									<a href="#" title="咖啡的好处与坏处">咖啡的好处与坏处</a>
+								</li>
+								<li class="odd">
+									<a href="#" title="白咖啡-黑色的东南亚咖啡">白咖啡-黑色的东南亚咖啡</a>
+								</li>
+								<li>
+									<a href="#" title="咖啡驿吧公告">咖啡驿吧公告</a>
+								</li>
+							</ul>
+							<div class="ad_news"></div>
+						</div>
+						<!--end mc-->
+					</div>
+					<!--end coffeenews--->
+				</div>
+				<!---end _widget_493--->
+
+				<div id="_widget_742" name="four_image_ads" widget_type="widget" class="widget">
+					<ul class="ad_small">
+						<li class="margin1">
+							<a href="" target="_blank"><img src="img/home/201402212345176496.jpg" width="308" height="100"></a>
+						</li>
+						<li class="margin1">
+							<a href="" target="_blank"><img src="img/home/201402212358592836.jpg" width="308" height="100"></a>
+						</li>
+						<li class="margin1">
+							<a href="" target="_blank"><img src="img/home/201402212358596580.jpg" width="308" height="100"></a>
+						</li>
+						<li>
+							<a href="" target="_blank"><img src="img/home/201402212358599752.jpg" width="308" height="100"></a>
+						</li>
+					</ul>
+				</div>
+				<!---end _widget_742--->
+				<div id="video">
+					<video src="img/home/monin.mp4" style="border:10px solid black;margin:10px  0;" width=290px autoplay controls>浏览器不支持video</video>
+				</div>
+
+				<div class="clr"></div>
+			</div>
+			<!----end div right---->
+
+			<!--footer-->
+			<footer>
+				<div class="footer box">
+					<div class="nav">
+						<a href="" target="_blank">网站地图</a>
+						/
+						<a target="_blank" href="#">关于我们</a>
+						/
+						<a target="_blank" href="#">沙龙动态</a>
+						/
+						<a target="_blank" href="#">友情链接</a>
+						/
+						<a target="_blank" href="#">联系我们</a>
+						/
+						<a target="_blank" href="#">版权声明</a>
+						<a target="_blank" class="login" href="#">会员登录</a>
+						<a target="_blank" class="register" href="#">会员注册</a>
+						<br>
+						<div style="text-align:left; padding-top:5px;"> </div>
+					</div>
+					<div class="copyright">
+						<p>
+							<a href="" target="_blank">咖啡沙龙网</a>
+							(
+							<a href="" target="_blank">粤ICP备11050714号</a>
+							)
+							<br> Copyright © 2004-2011 CoffeeSalon.Com 咖啡沙龙 All Rights Reserved.
+						</p>
+					</div>
+				</div>
+			</footer>
+	</body>
+
+</html>

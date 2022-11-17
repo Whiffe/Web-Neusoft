@@ -1,0 +1,330 @@
+<!DOCTYPE html >
+
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7 charset=utf-8">
+
+		<title>DetailsOfGoods </title>
+
+		<link href="css/goods_detail.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="js/jquery.min.js" charset="utf-8"></script>
+		<script type="text/javascript" src="js/goods_detail.js" charset="utf-8"></script>
+
+		<style>
+			.div3 {
+				float: left;
+				width: 40%;
+				height: 442px;
+				padding: 5px;
+			}
+			
+			.div4 {
+				height: 442px;
+				overflow: scroll
+			}
+			
+			.p1 {
+				font-weight: bolder;
+				margin-top: 10;
+				padding: 0
+			}
+			
+			.p2 {
+				height: 200px;
+				color: brown;
+				font-size: 12px;
+				font-family: tahoma, arial, 宋体;
+				line-height: 1.5;
+				margin: 0;
+				padding: 10px 0;
+			}
+			
+			.p3 {
+				background: url(img/detail/6.jpg) 200%;
+				margin: 10px 0;
+			}
+			
+			.div5 {
+				float: left;
+				width: 15%;
+				padding: 15px;
+			}
+			
+			.div6 {
+				float: left;
+				width: 80%
+			}
+			
+			.div6 img {
+				width: 100%
+			}
+			
+			.info {
+				width: 90%;
+				height: 50px;
+				overflow: hidden
+			}
+			
+			.buyoutprice {
+				color: white;
+				font-family: 'Microsoft Yahei', tahoma, arial;
+				font-size: 14px;
+				font-style: normal;
+				font-variant: normal;
+				font-weight: bold;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<div id="shortcut-2013">
+			<div class="w">
+				<ul class="fr lh">
+					<li class="fore1" id="loginbar"><span id="loginuser">您好,游客您好！欢迎来到咖啡驿 
+       </span>
+						<a href="" onclick="login()">[登录]</a>&nbsp;
+						<a href="" onclick="reg()">[免费注册]</a>
+					</li>
+					<li class="fore2 ld"> <s></s>
+						<a href="MyOrder.html">我的订单</a>
+					</li>
+					<li class="fore3 ld"> <s></s>
+						<a href="ShoppingCart.html" target="_blank">购物车</a>
+					</li>
+					<li class="fore4 ld menu" id="biz-service" data-widget="dropdown"> <s></s> <span class="outline"></span> <span class="blank"></span> 帮助中心 <b></b>
+						<div class="dd">
+							<div>
+								<a href="#" target="_blank" rel="nofollow">售后服务</a>
+							</div>
+							<div>
+								<a href="#" target="_blank" rel="nofollow">在线客服</a>
+							</div>
+							<div>
+								<a href="#" target="_blank" rel="nofollow">投诉中心</a>
+							</div>
+							<div>
+								<a href="#" target="_blank">客服邮箱</a>
+							</div>
+							<div>
+								<a href="#" target="_blank">客服邮箱</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<span class="clr"></span> </div>
+		</div>
+		<!-- end div w-->
+		<div id="o-header-2013">
+
+			<!---搜索栏-->
+			<div class="w" id="header-2013">
+				<div id="logo-2013" class="ld" title="咖啡商城-白咖啡,咖啡豆,咖啡机,coffee18.com">
+					<a href="#" hidefocus="true"><img alt="咖啡商城-白咖啡,咖啡豆,咖啡机,coffee18.com" src="img/site_logo.gif"></a>
+				</div>
+				<div id="search-2013">
+					<div class="i-search ld">
+						<div class="form">
+							<form method="GET" action="">
+								<input type="text" class="text" name="keyword" autocomplete="off">
+								<input type="submit" class="button" value="搜索" hidefocus="true">
+								<input type="hidden" name="act" value="index">
+								<input type="hidden" name="app" value="search">
+							</form>
+						</div>
+					</div>
+					<div id="hotwords"><strong>热门搜索：</strong>
+						<a href="">白咖啡</a>
+						<a href="">咖啡豆</a>
+						<a href="">咖啡机</a>
+						<a href="">咖啡杯</a>
+						<a href="">咖啡厅</a>
+					</div>
+				</div>
+				<div id="mycoffee-2013">
+					<dl>
+						<dt class="ld"><s></s><a href="我的订单.html">我的订单</a></dt>
+					</dl>
+				</div>
+
+				<div id="mycart">
+					<dl>
+						<dt class="ld"><a href="购物车.html" class="buy">购物车 <strong id="cart_goods_kinds">4</strong> 种商品</a> <b></b> </dt>
+					</dl>
+				</div>
+
+			</div>
+		</div>
+		<div class="w">
+			<div id="nav-2013">
+				<div id="categorys-2013">
+					<div class="mt ld">
+						<h2><a href="">全部商品分类<b></b></a></h2>
+					</div>
+				</div>
+				<ul id="navitems-2013">
+					<li class="">
+						<a href="商城首页.htm">首页</a>
+					</li>
+					<li class="">
+						<a href="#">搜索商品</a>
+					</li>
+					<li class="curr">
+						<a href="#" target="_blank">商品详情</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+		<!--------------main--------------->
+		<div id="main" style="width:70%">
+			<div id="top">
+				<div class="left">
+					<span class="clr"></span>
+
+					<div>
+						<canvas id="canvas1" width="360px" height="360px"></canvas>
+						<canvas id="canvas2" width="200px" height="200px"></canvas>
+					</div>
+
+					<div id="ULlist">
+						<ul>
+							<li>
+								<a href="#"><img id="first_img" src="img/detail/1.jpg"></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/detail/2.jpg"></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/detail/3.jpg"></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/detail/4.jpg"></a>
+							</li>
+						</ul>
+					</div>
+					<!---end ULlist--->
+
+				</div>
+				<!---end left---->
+
+				<div class="div3">
+					<input type="hidden" id="gid" value="g12">
+					<div class="p1" id="gname">【热销36万 特价全国包邮】越南原装进口3合1中原g7速溶咖啡800g</div>
+					<div class="p2">
+						【 100%越南TRUNG NGUYEN 原装进口中原G7咖啡】 【购买包邮商品+其它商品，享受一起包邮，谢谢！】总销量〔突破360，089包〕 本品收藏〔56，900人〕4.8分评分，累计评价〔169，086人〕好评95%以上；价格绝对亲民；元芳！你怎么看，有不选的理由吗？ 内含50包！<br> 【 100%越南TRUNG NGUYEN 原装进口中原G7咖啡】正品保证！<br> 店铺公告 本店默认邮政小包/天天快递，本店只接受换发申通快递、顺丰快递，请联系客服补上邮费差价，多谢合作！备注:全国包邮商品不含港澳台地区。
+						<br>
+
+					</div>
+					<!---end p2--->
+					<div class="p3" style="padding:10px;line-height:2em">
+						<span style="font-size:2em;color:white;font-weight:bolder" id="price">￥ 33.99</span>
+						<span style="background:white;font-size:12px ;font-weight:bold;-webkit-border-radius:25px;vertical-align:top;padding:4px;color:red;line-height:2em">即将涨价</span> <br>
+						<span class="buyoutprice">一口价 ￥<span style="text-decoration:line-through"> 46.90</span> 29.31元/500g<br> 广东深圳至 大连 快递: 0.00</span>
+					</div>
+					<!--end p3-->
+					<br>
+					<A HREF="#"><span style="background:#b22222;color:white;
+padding:5px 15px 5px 15px;-webkit-border-radius:5;">立刻购买</span></A>
+					<A HREF="#" onclick="addCart(this)"><span style="background:#ba7538;color:white;
+padding:5px 15px 5px 15px;-webkit-border-radius:5;">加入购物车</span></A>
+
+				</div>
+				<!---end div3--->
+				<div class="right">
+					<div class="div4">
+						<IMG SRC="img/detail/2.jpg" WIDTH="160" HEIGHT="160" BORDER="0" ALT="">
+						<IMG SRC="img/detail/3.jpg" WIDTH="160" HEIGHT="160" BORDER="0" ALT="">
+						<IMG SRC="img/detail/4.jpg" WIDTH="160" HEIGHT="160" BORDER="0" ALT="">
+					</div>
+					<!--end div4--->
+				</div>
+				<!---end right--->
+
+			</div>
+			<!---end top-->
+			<div id="mid-bottom">
+				<div class="clr"></div>
+				<div class="div5">
+					<span style="color :red">热卖商品排行榜</span>
+					<ul>
+
+						<li><img src="img/detail/li/2.jpg" width="90%" alt="热销2.1万特价购满包邮 比利时进口和情焦糖饼干250g/咖啡伴侣">
+							<div class="info">
+								<A HREF="" alt="特价50片独立包装比利时和情焦糖饼干312.5g 购满包邮（3包包邮）">特价50片独立包装</A>
+								￥25.99 已售出10511笔
+							</div>
+						</li>
+
+						<li><img src="img/detail/li/4.jpg" width="90%" alt="热销2.1万特价购满包邮 比利时进口和情焦糖饼干250g/咖啡伴侣">
+							<div class="info">
+								<A HREF="" alt="特价4盒全国包邮 韩国进口零食品乐天妈妈手派手工千层饼干127g">特价4盒全国包邮 </A>
+								￥9.88 已售出3084笔
+							</div>
+						</li>
+						<li><img src="img/detail/li/5.jpg" width="90%" alt="热销2.1万特价购满包邮 比利时进口和情焦糖饼干250g/咖啡伴侣">
+							<div class="info">
+								<A HREF="" alt="购满包邮马来西亚进口零食品Jacker杰克牌奶油味方形威化饼干100g">购满包邮马来西亚进口零食品</A>
+								￥8.39 已售出2771笔
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="div6">
+					<p style="color:red">商品详情</p>
+					<p>【 100%越南TRUNG NGUYEN 原装进口中原G7咖啡】天猫正品保证！</p>
+					<p>
+						中原G7咖啡小知识：〔本店所售中英文版〕 中 原G7咖啡系列是出口装中英文版，中英文版是二条专供出口的生产线生产、保证高品质生产原材料、稳定生产工艺流程及符合国际食品卫生标准；其它越文版则含 有T1～T7各条生产线生产的咖啡，是符越南本国食品卫生标准。中原G7咖啡进入国际市场销售的咖啡香浓度及口感上会跟越文版有微小差异，请各位买家熟知 了解。</p>
+					<IMG SRC="img/detail/7.jpg" WIDTH="735" BORDER="0" ALT="">
+					<IMG SRC="img/detail/8.jpg" WIDTH="735" BORDER="0" ALT="">
+				</div>
+			</div>
+			<!--end mid-bottom-->
+
+		</div>
+		<!---end div main--->
+		<!--footer-->
+		<footer>
+			<div class="footer box">
+				<div class="nav">
+					<a href="" target="_blank">网站地图</a>
+					/
+					<a target="_blank" href="">关于我们</a>
+					/
+					<a target="_blank" href="">沙龙动态</a>
+					/
+					<a target="_blank" href="">友情链接</a>
+					/
+					<a target="_blank" href="">联系我们</a>
+					/
+					<a target="_blank" href="">版权声明</a>
+					<a target="_blank" class="login" href="">会员登录</a>
+					<a target="_blank" class="register" href="">会员注册</a>
+					<br>
+					<div style="text-align:left; padding-top:5px;"> </div>
+				</div>
+			</div>
+		</footer>
+	</body>
+	<script>
+		
+		$(function() {
+			   //获取url参数productId
+				
+				var loc=window.location.href;
+				var n=loc.indexOf("=");
+				var param=loc.substr(n+1);
+				//alert(param);
+				if(param != null && param.toString().length > 1) {
+					
+				}
+				else{param='g77';}
+				//加载商品信息
+				loadGoods(param);
+			})
+			
+	</script>
+
+</html>

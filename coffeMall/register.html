@@ -1,0 +1,26 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> 用户注册页面 </TITLE>
+<meta charset="utf-8">
+ 
+<SCRIPT LANGUAGE="JavaScript">
+function reg(){
+    var username=document.f1.user.value;
+	var password=document.f1.pw.value;
+   localStorage.setItem("username",username);
+   localStorage.setItem("password",password);
+   alert("注册成功");
+   self.close();
+}
+</SCRIPT>
+</HEAD>
+ <BODY> 
+ <img src="img/home/reg.jpg" width="380px" height="190px">
+  <form name="f1">
+ <p> 用户名<INPUT TYPE="text" NAME="user"></p>
+ 密   码 <INPUT TYPE="password" NAME="pw">
+  <INPUT TYPE="button" value="注册" onclick="reg()">
+  </form>
+ </BODY>
+</HTML>

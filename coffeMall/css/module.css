@@ -1,0 +1,111 @@
+﻿
+/* footer */
+footer{margin-left:61px;width:1210px;height:400px;}
+footer .footer { background:#644108; 
+margin:0px auto;
+color:#A9A9A9;
+padding-bottom:10px;
+zoom:1; clear:both;
+overflow:hidden;  width:1210px;}
+
+footer .footer a { color:#FFF; text-decoration:none; }
+footer .footer a:hover { color:#d2d0ce; text-decoration:underline; }
+footer .footer .nav { float:right; line-height:150%; text-align:left;
+                                   margin-top:50px;margin-right:80px; margin-bottom:50px; }
+.footer .login { background-color:#598428; color:#FFF; padding:3px 14px; margin-left:10px; }
+.footer .register { background-color:#F36523; color:#FFF; padding:3px 14px; }
+/*end footer*/
+
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, address, big, cite, code, del, em, font, img, ins, small, strong, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend {margin: 0;padding: 0}
+ol, ul {list-style: none}
+body {font: 12px/150% Arial, Verdana, "\5b8b\4f53";
+color: #666;background: #fff;_background-attachment: fixed}
+a {color: #666;text-decoration: none}
+a:hover {color: #E4393C;text-decoration: underline}
+a img {border: 0}
+img {vertical-align: middle}
+.fl {float: left}
+.fr {float: right}
+.w {width: 1210px;margin: 0 auto}
+.lh {overflow: hidden;zoom: 1}
+.lh li, .lh dl, .lh .item {float: left}
+.ld {position: relative;zoom: 1}
+.ld s, .ld b, .ld .block {position: absolute;overflow: hidden}
+.block {display: block;overflow: hidden}
+.hide {display: none}
+.form label, .form input, .form select, .form textarea, .form button, .form .label {float: left;font-size: 12px}
+.btn-img, .button {display: inline-block;margin: 0;padding: 0;border: 0;text-align: center;cursor: pointer}
+.btn-text {margin: 0;padding: 0;text-align: center;cursor: pointer}
+
+.clr{ display:block; clear:both; overflow:hidden; height:0; line-height:0; font-size:0;}
+
+#shortcut-2013 .fl b, #shortcut-2013 .fr b {background-image: url(../images/20130330A_1.png);	background-repeat: no-repeat}
+#shortcut-2013, #shortcut-2013 .w {height: 30px;background: #F7F7F7}
+#shortcut-2013 {width: 100%;border-bottom: 1px solid #eee;line-height: 30px}
+#shortcut-2013 li {height: 30px;padding: 0 11px 0 12px}
+#shortcut-2013 li s {top: 9px;left: 0;width: 0;height: 12px;border-left: 1px solid #DDD;overflow: hidden}
+#shortcut-2013 b {transition: transform .2s ease-in 0s;-webkit-transition: -webkit-transform .2s ease-in 0s}
+#shortcut-2013 .fl {overflow: visible}
+#shortcut-2013 .fl .fore1 {padding-left: 16px;z-index: 13}
+#shortcut-2013 .fl b {top: 8px;left: 0;width: 13px;height: 13px;background: url(../images/20130330A_1.png) no-repeat 0 0;cursor: pointer}
+#shortcut-2013 .fl li:hover b {transform: rotate(720deg);-webkit-transform: rotate(720deg)}
+#shortcut-2013 .fl .jtip {left: 68px;top: 6px;width: 120px;line-height: 16px}
+#shortcut-2013 .fr {height: 30px;overflow: visible}
+#shortcut-2013 .fr b {top: 13px;right: 8px;width: 7px;height: 4px;background-position: -95px -55px}
+#shortcut-2013 .menu {width: 60px;z-index: 10}
+#shortcut-2013 .dd {display: none}
+#shortcut-2013 .hover .outline, #shortcut-2013 .hover .dd {position: absolute;border: 1px solid #DDD;background: #fff;-moz-box-shadow: 0 0 10px rgba(0,0,0,.12);-webkit-box-shadow: 0 0 10px rgba(0,0,0,.12);box-shadow: 0 0 10px rgba(0,0,0,.12)}
+#shortcut-2013 .hover .outline {z-index: -1;left: 5px;top: 3px;width: 73px;height: 28px}
+#shortcut-2013 .hover .blank {position: absolute;z-index: 1;top: 23px;left: 6px;width: 73px;height: 8px;overflow: hidden;background: #fff}
+#shortcut-2013 .hover .dd {display: block;top: 30px}
+#shortcut-2013 .fr .hover b {transform: rotate(180deg);-webkit-transform: rotate(180deg);filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2)}
+
+
+
+#header-2013 {height: 60px;padding: 15px 0}
+#logo-2013 {float: left;width: 230px}
+#search-2013 {float: left;width: 430px;padding: 4px 86px 0 0}
+#search-2013 input {margin: 0;padding: 0;height: 30px;border: 0}
+#search-2013 .i-search {z-index: 11;width: 504px;height: 30px; margin-left:100px; margin-bottom: 3px;border: 3px solid #B8873B}
+#search-2013 .form {height: 30px;overflow: hidden}
+#search-2013 .text {width: 416px;height: 20px;padding: 5px;background-color: #fff;	background-repeat: repeat-x;line-height: 20px;color: #999;font-family: arial, "\5b8b\4f53";	font-size: 14px}
+#search-2013 .button {width: 78px;background: #B8873B;font-size: 14px;font-weight: 700;color: #fff}
+
+#hotwords { width:480px;height: 18px;color: #999;overflow: hidden; margin-left:110px;}
+#hotwords span, #hotwords strong {float: left;font-weight: 400}
+#hotwords a:link, #hotwords a:visited {float: left;margin-right: 10px;color: #999}
+#hotwords a:hover, #hotwords a:active {color: #E4393C}
+
+#mycoffee-2013 dt,#mycoffee-2013 dl.hover dt{background-image:url(../images/20130330A_1.png);background-repeat:no-repeat}
+#mycoffee-2013{float:right;position:relative;z-index:9;width:106px;height:30px;margin-top:12px; padding-left:20px;}
+#mycoffee-2013 dt{position:absolute;z-index:1;width:50px;height:30px;padding:0 24px 0 30px;border:1px solid #EFEFEF;background-position:-116px -24px;background-color:#F7F7F7;text-align:center;line-height:27px;cursor:pointer;*line-height:30px}
+#mycoffee-2013 dt b{top:12px;right:8px;width:0;height:0;border-style:solid dashed dashed;border-width:5px;border-color:#CCC transparent transparent;overflow:hidden}
+#mycoffee-2013 dd{display:none;position:absolute;top:32px;right:0;width:310px;border:1px solid #E3E3E3;background:#fff}
+
+#mycart dt,#mycart dl.hover dt,#mycart .nogoods b{background-image:url(../images/20130330A_1.png);background-repeat:no-repeat}
+#mycart{float:right;position:relative;z-index:9;width:150px;height:30px;margin-top:12px}
+#mycart dt{position:absolute;z-index:3;width:110px;height:30px;padding:0 20px 0 30px;border:1px solid #EFEFEF;background-position:-115px -84px;background-color:#F7F7F7;cursor:pointer;text-align:center}
+#mycart dt .shopping{position:absolute;top:-13px;left:20px;background-image:url(../images/20130330A_1.png);background-position:-133px -279px;padding-left:6px;color:#fff}
+#mycart dt .shopping span{float:left;display:block;height:20px;padding-right:6px;background-image:url(../images/20130330A_1.png);background-position:100% -250px}
+#mycart dt a{line-height:27px;*line-height:30px}
+#mycart dt b{top:9px;right:4px;width:0;height:0;border-style:dashed dashed dashed solid;border-width:5px;border-color:transparent transparent transparent #CCC;overflow:hidden}
+#mycart dd{display:none;position:absolute;top:32px;right:0;width:350px}
+#mycart dl.hover dt{height:32px;border:1px solid #E3E3E3;border-bottom:0;background-position:-115px -114px;background-color:#fff;-moz-box-shadow:0 0 10px #DDD;-webkit-box-shadow:0 0 10px #DDD;box-shadow:0 0 10px #DDD}
+#mycart dl.hover s{position:absolute;bottom:-10px;left:-10px;width:134px;height:10px;background:#fff}
+#mycart dl.hover dd{display:block;-moz-box-shadow:0 0 10px rgba(0,0,0,.12);-webkit-box-shadow:0 0 10px rgba(0,0,0,.12);box-shadow:0 0 10px rgba(0,0,0,.12)}
+
+
+#nav-2013{position:relative;z-index:6;height:40px;padding-left:210px;background:#B8873B}
+#navitems-2013{}#navitems-2013,#navitems-2013 li,#navitems-2013 li a{height:40px}
+#navitems-2013 li{float:left;position:relative;width:83px}
+#navitems-2013 li a{position:absolute;top:0;left:0;width:85px;text-align:center;color:#fff;font:700 16px/40px "microsoft yahei";text-decoration:none}
+#navitems-2013 .curr,#navitems-2013 .hover{z-index:1}
+#navitems-2013 .curr a,#navitems-2013 .hover a{background:#644108}
+#treasure{position:absolute;right:0;top:0}
+#categorys-2013 .mt b,#categorys-2013 h3,#categorys-2013 s,#categorys-2013.hover .mt b{background-image:url(../images/20130330A_1.png);background-repeat:no-repeat}
+#categorys-2013{position:absolute;top:0;left:0;width:210px;height:40px}
+#categorys-2013 h2{ font-size:18px;}
+#categorys-2013 .mt{background:#895707}
+#categorys-2013 .mt a{display:block;height:40px;padding-left:20px;line-height:40px;color:#fff} 
+.mt a:hover {text-decoration:none} 
+#categorys-2013 .mt b{top:10px;right:10px;width:20px;height:20px;background-position:-65px 0}

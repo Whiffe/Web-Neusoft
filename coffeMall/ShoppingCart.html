@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+<HTML>
+
+	<HEAD>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7 charset=utf-8">
+		<TITLE> 购物车 </TITLE>
+		<link href="css/goods_detail.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/shoppingcart.js"></script>
+		<style>
+			.div1 {
+				float: left;
+				width: 280px;
+				vertical-align: top;
+				margin-top: 0px;
+				text-align: left
+			}
+			
+			.div2 {
+				float: left;
+				width: 180px;
+				color: white
+			}
+			
+			.div3 {
+				float: left;
+				width: 115px;
+				text-align: center
+			}
+			
+			.div4 {
+				float: left;
+				width: 115px;
+				text-align: center
+			}
+			
+			.div5 {
+				float: left;
+				width: 115px;
+				text-align: center
+			}
+			
+			.div6 {
+				float: left;
+				width: 100px;
+			}
+			
+			.div7 {
+				clear: both;
+			}
+			
+			.outter {
+				background-color: #f7cf92;
+				border-top: solid 1px gray;
+				border-bottom: solid 1px #778899;
+				padding: 10px;
+				margin: 10px;
+				position: relative
+			}
+			
+			a {
+				text-decoration: none
+			}
+			
+			.itempic {
+				border: solid 1px #01bcbc;
+				background: white;
+				position: absolute;
+				top: -80px;
+				left: 130px;
+				z-index: 999;
+				display: none
+			}
+			
+			.itempic img {
+				text-align: center;
+				vertical-align: center
+			}
+			
+			.middle {
+				width: 80%;
+				margin: auto;
+			}
+			
+			.footer {
+				font-size: 12px;
+				line-height: 20px;
+				text-align: center;
+			}
+		</style>
+
+	</HEAD>
+
+	<body>
+
+		<div class="header">
+
+			<!---搜索栏-->
+			<div class="w" id="header-2013">
+				<div id="logo-2013" class="ld" title="咖啡商城">
+					<a href="#" hidefocus="true"><img alt="咖啡商城-白咖啡,咖啡豆,咖啡机,coffee18.com" src="img/site_logo.gif"></a>
+				</div>
+				<div id="search-2013">
+					<div class="i-search ld">
+						<div class="form">
+							<form method="GET" action="">
+								<input type="text" class="text" name="keyword" autocomplete="off">
+								<input type="submit" class="button" value="搜索" hidefocus="true">
+								<input type="hidden" name="act" value="index">
+								<input type="hidden" name="app" value="search">
+							</form>
+						</div>
+					</div>
+					<div id="hotwords"><strong>热门搜索：</strong>
+						<a href="">白咖啡</a>
+						<a href="">咖啡豆</a>
+						<a href="">咖啡机</a>
+						<a href="">咖啡杯</a>
+						<a href="">咖啡厅</a>
+					</div>
+				</div>
+				<div id="mycoffee-2013">
+					<dl>
+						<dt class="ld"><s></s><a href="我的订单.html">我的订单</a></dt>
+					</dl>
+				</div>
+
+				<div id="mycart">
+					<dl>
+						<dt class="ld"><a href="" class="buy">购物车 <strong id="cart_goods_kinds">4</strong> 种商品</a> <b></b> </dt>
+					</dl>
+				</div>
+
+			</div>
+
+		</div>
+		<!--end of header-->
+		<div class="middle" id="cart">
+
+			<div style="text-align:center;margin:10px;">
+				<div class="div1">
+					<INPUT TYPE="checkbox" NAME="selectAll" onchange="checkAll(this)">全选 商品信息</div>
+				<div class="div2">&nbsp;&nbsp;&nbsp;</div>
+				<div class="div3">单价（元）</div>
+				<div class="div4">数量</div>
+				<div class="div5">金额（元）</div>
+				<div class="div6">操作</div>
+				<div class="div7"></div>
+			</div>
+			<form>
+				<div style="margin:10px">
+					<INPUT TYPE="checkbox" NAME="shops" onchange="check(this)">品牌：麦斯威尔</div>
+
+				<div class="outter" id="g01" name="item">
+
+					<div class="div1">
+
+						<INPUT TYPE="checkbox" name="goods" style="vertical-align:top" onchange="check2(this)">
+						<IMG SRC="img/shoppingcart/3.jpg" WIDTH="79" HEIGHT="80" BORDER="0" onmouseover="showpic(this)" onmouseout="hidepic(this)">
+						<IMG class="itempic" SRC="img/shoppingcart/33.jpg" WIDTH="238" HEIGHT="240" BORDER="0" ALT="大图">
+						<div style="font:12px;width:100px;vertical-align:top;display:inline-block;">
+							<A HREF="" alt="麦斯威尔Maxwell House三合一速溶咖啡粉 特浓咖啡 3盒装 共90条">麦斯威尔Maxwell House三合一速溶咖啡粉 特浓咖啡 3盒装 共90条</A>
+						</div>
+					</div>
+					<div class="div2" style="color:gray;font-size:12px"> 特浓咖啡 3盒装 共90条</div>
+					<div class="div3">89.2</div>
+					<div class="div4">
+						<input type="number" name="num" value="1" min="1" style="width:60px;text-align:center" onchange="count(this)"></div>
+					<div class="div5">89.2</div>
+					<div class="div6" style="font-size:12px;text-align:center;line-height:20px">
+						<A HREF="">移入收藏夹</A><br>
+						<A HREF="#" onclick="delFromCart('g01')">删除</A>
+					</div>
+					<div class="div7"></div>
+
+				</div>
+				<div class="outter" id="g02" name="item">
+
+					<div class="div1">
+						<INPUT TYPE="checkbox" name="goods" style="vertical-align:top" onchange="check2(this)">
+						<IMG SRC="img/shoppingcart/4.jpg" WIDTH="79" HEIGHT="80" BORDER="0" ALT="" onmouseover="showpic(this)" onmouseout="hidepic(this)">
+
+						<IMG class="itempic" SRC="img/shoppingcart/44.jpg" WIDTH="238" HEIGHT="240" BORDER="0" ALT="">
+
+						<span style="font:12px;width:100px;vertical-align:top;display:inline-block"><A HREF="" alt="麦斯威尔Maxwell House三合一速溶咖啡粉 原味+特浓+奶香 3盒21条">麦斯威尔Maxwell House三合一速溶咖啡粉 原味+特浓+奶香 3盒21条</A></span>
+					</div>
+					<div class="div2" style="color:gray;font-size:12px">原味+特浓+奶香 3盒21条</div>
+					<div class="div3">29.0</div>
+					<div class="div4"><input type="number" name="num" value="1" min="1" style="width:60px;text-align:center" onchange="count(this)"></div>
+					<div class="div5">29.0</div>
+					<div class="div6" style="font-size:12px;text-align:center;line-height:20px">
+						<A HREF="">移入收藏夹</A><br>
+						<A HREF="#" onclick="delFromCart('g02')">删除</A>
+					</div>
+					<div class="div7"></div>
+				</div>
+			</form>
+			<form>
+				<div style="margin:10px">
+					<INPUT TYPE="checkbox" NAME="shops" onchange="check(this)">品牌：雀巢咖啡</div>
+				<div class="outter" id="g03" name="item">
+					<div class="div1">
+						<INPUT TYPE="checkbox" name="goods" style="vertical-align:top" onchange="check2(this)">
+						<IMG SRC="img/shoppingcart/1.jpg" WIDTH="79" HEIGHT="80" BORDER="0" ALT="" onmouseout="hidepic(this)" onmouseover="showpic(this)">
+
+						<IMG class="itempic" SRC="img/shoppingcart/11.jpg" WIDTH="240" HEIGHT="205" BORDER="0" ALT="">
+
+						<span style="font:12px;width:100px;vertical-align:top;display:inline-block"><A HREF="" alt="Nestle雀巢咖啡1+2特浓速溶咖啡粉三合一90条装即冲包邮coffee">Nestle雀巢咖啡1+2特浓速溶咖啡粉三合一90条装即冲包邮coffee</A></span>
+					</div>
+					<div class="div2" style="color:gray;font-size:12px">特浓速溶咖啡粉三合一90条装</div>
+					<div class="div3">92.0</div>
+					<div class="div4"><input type="number" name="num" value="1" min="1" style="width:60px;text-align:center" onchange="count(this)"></div>
+					<div class="div5">92.0</div>
+					<div class="div6" style="font-size:12px;text-align:center;line-height:20px">
+						<A HREF="">移入收藏夹</A><br>
+						<A HREF="#" onclick="delFromCart('g03')">删除</A>
+					</div>
+					<div class="div7"></div>
+
+				</div>
+				<div class="outter" id="g04" name="item">
+					<div class="div1">
+						<INPUT TYPE="checkbox" name="goods" style="vertical-align:top" onchange="check2(this)">
+						<IMG SRC="img/shoppingcart/2.jpg" WIDTH="79" HEIGHT="80" BORDER="0" ALT="" onmouseout="hidepic(this)" onmouseover="showpic(this)">
+
+						<IMG class="itempic" SRC="img/shoppingcart/22.jpg" WIDTH="240" HEIGHT="205" BORDER="0" ALT="">
+
+						<span style="font:12px;width:100px;vertical-align:top;display:inline-block"><A HREF="" alt="Nestle雀巢咖啡1+2原味三合一速溶咖啡粉15g*100条装即溶袋">Nestle雀巢咖啡1+2原味三合一速溶咖啡粉15g*100条装即溶袋</A></span>
+					</div>
+					<div class="div2" style="font-size:12px;color:gray">三合一速溶咖啡粉15g*100条装</div>
+					<div class="div3">95.0</div>
+					<div class="div4"><input type="number" name="num" value="1" min="1" style="width:60px;text-align:center" onchange="count(this)"></div>
+					<div class="div5">95.0</div>
+					<div class="div6" style="font-size:12px;text-align:center;line-height:20px">
+						<A HREF="">移入收藏夹</A><br>
+						<A HREF="#" onclick="delFromCart('g04')">删除</A>
+					</div>
+					<div class="div7"></div>
+				</div>
+			</form>
+
+		</div>
+		<div class="middle" style="text-align:right;">已选商品<span style="font-size:2em;color:#d2691e;font-weight:bolder" id="piece">0</span>件 合计 (不含运费)<span style="font-size:2em;color:#d2691e;font-weight:bolder">￥<span id="money" >0</span></span>
+			<A HREF="">
+				<div style="display:inline-block;width:120px;height:30px;background:#d2691e;-webkit-border-radius:10;font-size:20px;color:white;font-weight:bold;font-family:黑体;text-align:center;padding:10px">结 算</div>
+			</A>
+
+		</div>
+		<div class="footer">关于淘宝合作伙伴营销中心廉正举报联系客服开放平台诚征英才联系我们网站地图法律声明? 2014 Taobao.com 版权所有<br> 网络文化经营许可证：文网文[2010]040号|增值电信业务经营许可证：浙B2-20080224-1|信息网络传播视听节目许可证：1109364号
+		</div>
+	</BODY>	
+
+</HTML>
