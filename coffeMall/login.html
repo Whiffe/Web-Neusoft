@@ -1,0 +1,29 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> 用户登录页面 </TITLE>
+  
+<SCRIPT LANGUAGE="JavaScript">
+function login(){
+   var us1=  localStorage.getItem("username");
+   var pw1=localStorage.getItem("password");
+   var us2=document.f1.user.value;
+   var pw2=document.f1.pw.value;
+   if(us1==us2&&pw1==pw2){
+		alert("登录成功");
+		window.opener.loginuser.innerHTML="欢迎,"+us1;   
+   }
+   else alert("用户名或密码错误");
+   self.close();
+}
+</SCRIPT>
+</HEAD>
+ <BODY> 
+ <img src="img/home/login.jpg" width="385px" height="190px">
+  <form name="f1">
+  <p>用户名<INPUT TYPE="text" NAME="user"></p>
+ 密   码 <INPUT TYPE="password" NAME="pw">
+  <INPUT TYPE="button" value="登录" onclick="login()">
+  </form>
+ </BODY>
+</HTML>
