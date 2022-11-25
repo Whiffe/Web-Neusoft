@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			#canvas1 {
+				margin-left: 30%;
+				box-shadow: 3px 3px 10px black;
+			}
+			.input1{
+				margin-left: 30%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<canvas id="canvas1" width="500" height="500"></canvas><br />
+		<input class="input1" type="range" name="slider" id="silder" value="0.5" max="1" min="0" step="0.01" />
+
+	</body>
+	<script type="text/javascript">
+		var canvas = document.getElementById("canvas1");
+		var context = canvas.getContext("2d");
+		var slider = document.getElementById("silder");
+		var scale = slider.value;
+		creatImg(scale);
+		slider.onmousedown = function() {
+			slider.onmousemove = function() {
+				scale = slider.value;
+				creatImg(scale);
+			}
+		}
+
+		function creatImg(scale) {
+			var myImg = new Image();
+			myImg.src = "img/detail/5.jpg"
+			var imgh = canvas.height * scale;
+			var imgw = canvas.width * scale;
+			var x = canvas.width / 2 - imgw / 2;
+			var y = canvas.height / 2 - imgh / 2
+			myImg.onload = function() {
+				context.clearRect(0, 0, canvas.width, canvas.height);
+				context.drawImage(myImg, x, y, imgw, imgh)
+			}
+		}
+	</script>
+
+</html>
